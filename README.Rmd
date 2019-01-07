@@ -4,7 +4,7 @@ editor_options:
   chunk_output_type: inline
 ---
 ```{r pkg-knitr-opts, include=FALSE}
-knitr$opts_chunk$set(collapse=TRUE, fig.retina=2, message=FALSE, warning=FALSE)
+knitr::opts_chunk$set(collapse=TRUE, fig.retina=2, message=FALSE, warning=FALSE)
 options(width=120)
 ```
 
@@ -14,9 +14,25 @@ options(width=120)
 
 # securitytrails
 
+Tools to Query the '[SecurityTrails](https://securitytrails.com/corp/api)' 'API'
+
 ## Description
 
+'[SecurityTrails](https://securitytrails.com/corp/api)' (<securitytrails.com>) offers an 'API' to query information about domains, 'IP' addresses, hostnames and more. Methods are provided to query 'SecurityTrails' 'API' endpoints.
+
 ## What's Inside The Tin
+
+- `st_assoc_domains`:	Find associated domains
+- `st_dns_history`:	DNS history by record type
+- `st_domain`:	Get Domain
+- `st_domain_search`:	Search Domain (Filter strings)
+- `st_explore_ips`:	Explore IPs
+- `st_ping`:	Test Access To the SecurityTrails API
+- `st_subdomains`:	List Subdomains
+- `st_tags`:	List Tags
+- `st_whois`:	Get WHOIS
+- `st_whois_history`:	WHOIS history by domain
+- `trails_api_key`:	Get or set `SECURITYTRAILS_API_KEY` value
 
 The following functions are implemented:
 

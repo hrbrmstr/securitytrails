@@ -1,0 +1,1 @@
+.st_ua <- "securitytrails R package <https://gitlab.com/hrbrmstr/securitytrails>"
