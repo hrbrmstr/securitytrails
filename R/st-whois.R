@@ -13,7 +13,7 @@
 st_whois <- function(domain, trails_key = trails_api_key()) {
 
   httr::GET(
-    url = sprintf("https://api.securitytrails.com/v1/domain/%s/whois", host[1]),
+    url = sprintf("https://api.securitytrails.com/v1/domain/%s/whois", domain[1]),
     httr::add_headers(`APIKEY` = trails_key),
     httr::user_agent(.st_ua)
   ) -> res
